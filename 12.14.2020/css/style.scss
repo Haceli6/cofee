@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    outline: none;
+}
+
+ul{
+    margin: 0;
+    li{
+        list-style: none;
+    }
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+header{
+    background: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/home-3-slider-image-3-new.jpg);
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    .navigation-menu{
+        .nav-logo{
+            height: 67px;
+            a{
+                img{
+                    width: auto;
+                    height: 100%;
+                }
+            }
+        }
+        .menu{
+            ul{
+                .li{
+                    padding: 35px 23px;
+                    position: relative;
+                    &:hover{
+                        .drop-menu{
+                            max-height: 20em;
+                        }
+                    }
+                    .a{
+                        font-size: 18px;
+                        text-transform: uppercase;
+                        color: white;
+                        position: relative;
+
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            height: 2px;
+                            width: 0%;
+                            transition: .5s ease;
+                            background-color: rgb(6, 59, 52);
+                        }
+                        &:hover::after{
+                            width: 100%;
+                        }
+                        &.active-link::after{
+                            width: 100%;
+                        }
+                    }
+                    .drop-menu{
+                        position: absolute;
+                        top: 100%;
+                        left:0;
+                        max-height: 0;
+                        overflow: hidden;
+                        transition: .6s ease;
+                        ul{
+                            padding: 15px 0;
+                            background-color: rgb(27, 27, 27);
+                            li{
+                                width: 228px;
+                                a{
+                                    padding: 6px 27px;
+                                    display: block;
+                                    color: rgb(25, 126, 173);
+                                    font-size: 15px;
+                                    text-transform: uppercase;
+                                    position: relative;
+                                    left: 0;
+                                    transition: .5s ease;
+                                    &:hover{
+                                        left: 20PX;
+                                        top: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .nav-icon{
+                sup{
+                    color: rgb(214, 74, 74);
+                    font-size: 16px;
+                }
+                i{
+                    color: rgb(114, 149, 151);
+                    font-size: 20px;
+                }
+                a{
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+    .head-text{
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        h1{
+            color: white;
+        }
+        p{
+            color: whitesmoke;
+        }
+        a{
+            padding: 25px 40px;
+            border: white 1px solid;
+        }
+    }
+    .side-menu{
+        background-color: rgb(32, 31, 31);
+        position: fixed;
+        top: 0;
+        right: -500px;
+        height: 100%;
+        width: 450px;
+        padding: 60px 42px 30px 41px;
+        transition: .5s ease-out;
+        text-align: center;
+        &.active-side{
+            right: 0;
+        }
+        p{
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+  outline: none;
+}
+
+ul {
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  background: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/home-3-slider-image-3-new.jpg);
+  height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header .navigation-menu .nav-logo {
+  height: 67px;
+}
+
+header .navigation-menu .nav-logo a img {
+  width: auto;
+  height: 100%;
+}
+
+header .navigation-menu .menu ul .li {
+  padding: 35px 23px;
+  position: relative;
+}
+
+header .navigation-menu .menu ul .li:hover .drop-menu {
+  max-height: 20em;
+}
+
+header .navigation-menu .menu ul .li .a {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+  position: relative;
+}
+
+header .navigation-menu .menu ul .li .a::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: #063b34;
+}
+
+header .navigation-menu .menu ul .li .a:hover::after {
+  width: 100%;
+}
+
+header .navigation-menu .menu ul .li .a.active-link::after {
+  width: 100%;
+}
+
+header .navigation-menu .menu ul .li .drop-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+}
+
+header .navigation-menu .menu ul .li .drop-menu ul {
+  padding: 15px 0;
+  background-color: #1b1b1b;
+}
+
+header .navigation-menu .menu ul .li .drop-menu ul li {
+  width: 228px;
+}
+
+header .navigation-menu .menu ul .li .drop-menu ul li a {
+  padding: 6px 27px;
+  display: block;
+  color: #197ead;
+  font-size: 15px;
+  text-transform: uppercase;
+  position: relative;
+  left: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+header .navigation-menu .menu ul .li .drop-menu ul li a:hover {
+  left: 20PX;
+  top: 10px;
+}
+
+header .navigation-menu .menu .nav-icon sup {
+  color: #d64a4a;
+  font-size: 16px;
+}
+
+header .navigation-menu .menu .nav-icon i {
+  color: #729597;
+  font-size: 20px;
+}
+
+header .navigation-menu .menu .nav-icon a {
+  padding: 0 15px;
+}
+
+header .head-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header .head-text h1 {
+  color: white;
+}
+
+header .head-text p {
+  color: whitesmoke;
+}
+
+header .head-text a {
+  padding: 25px 40px;
+  border: white 1px solid;
+}
+
+header .side-menu {
+  background-color: #201f1f;
+  position: fixed;
+  top: 0;
+  right: -500px;
+  height: 100%;
+  width: 450px;
+  padding: 60px 42px 30px 41px;
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
+  text-align: center;
+}
+
+header .side-menu.active-side {
+  right: 0;
+}
+
+header .side-menu p {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
